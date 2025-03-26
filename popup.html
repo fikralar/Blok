@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Blok Eklentisi</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            width: 320px;
+            padding: 15px;
+            background-color: #ffffff;
+            color: #333;
+            margin: 0;
+        }
+        
+        h2 {
+            margin-top: 0;
+            color: #d32f2f;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        h2::before {
+            content: "🚫";
+            font-size: 1.2em;
+        }
+        
+        .input-group {
+            display: flex;
+            gap: 5px;
+            margin-bottom: 15px;
+        }
+        
+        input {
+            flex: 1;
+            box-sizing: border-box;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        
+        button {
+            background-color: #d32f2f;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            padding: 8px 12px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            font-weight: bold;
+        }
+        
+        button:hover {
+            background-color: #b71c1c;
+        }
+        
+        button:disabled {
+            background-color: #cccccc;
+            cursor: not-allowed;
+        }
+        
+        .section {
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px solid #eee;
+        }
+        
+        h3 {
+            margin-top: 0;
+            margin-bottom: 10px;
+            color: #555;
+            font-size: 1em;
+        }
+        
+        ul {
+            list-style-type: none;
+            padding: 0;
+            max-height: 150px;
+            overflow-y: auto;
+            margin: 10px 0;
+            border: 1px solid #eee;
+            border-radius: 4px;
+        }
+        
+        li {
+            padding: 8px 10px;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        li:last-child {
+            border-bottom: none;
+        }
+        
+        .sil {
+            background-color: transparent;
+            color: #d32f2f;
+            border: none;
+            cursor: pointer;
+            padding: 2px 8px;
+            font-size: 0.9em;
+        }
+        
+        .sil:hover {
+            color: #b71c1c;
+            background-color: #ffeeee;
+            border-radius: 4px;
+        }
+        
+        #status {
+            margin-top: 10px;
+            padding: 8px;
+            border-radius: 4px;
+            text-align: center;
+            font-weight: bold;
+            display: none;
+        }
+        
+        .footer {
+            margin-top: 15px;
+            text-align: center;
+            font-size: 0.8em;
+            color: #777;
+        }
+        
+        /* Button Styles */
+        #tumunuTemizle {
+            width: 100%;
+            margin-top: 10px;
+            background-color: #ff5722;
+        }
+        
+        #ekleButon {
+            background-color: #2196F3;
+        }
+    </style>
+</head>
+<body>
+    <h2>Blok</h2>
+    <p>Bu eklenti ile siteler tamamen engellenebilir, tüm bağlantılar kesilir ve hiçbir şekilde trafik/reklam geliri oluşmaz.</p>
+    <div style="background-color: #f8f8f8; padding: 8px; border-radius: 4px; margin-bottom: 10px; font-size: 0.9em; border-left: 3px solid #2196F3;">
+      <strong>Gelişmiş Koruma:</strong> Eklediğiniz siteler için tüm trafik engellenir ve hiçbir şekilde analitik verileri toplanmaz.
+    </div>
+    
+    <div class="input-group">
+        <input type="text" id="yeniSite" placeholder="Engellenecek site (ör: ornek.com)">
+        <button id="ekleButon">Ekle</button>
+    </div>
+    
+    <div class="section">
+        <h3>Engellenen Siteler</h3>
+        <ul id="engelliListe"></ul>
+        <button id="tumunuTemizle">Listeyi Temizle</button>
+    </div>
+    
+    <div class="footer">
+        Siteleri engellemek ve arama sonuçlarından kaldırmak için kullanın.
+    </div>
+    
+    <script src="popup.js"></script>
+</body>
+</html>

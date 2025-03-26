@@ -1,0 +1,205 @@
+[
+  {
+    "id": 1,
+    "priority": 100,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "*://*.ulker.com.tr/*",
+      "resourceTypes": [
+        "main_frame", "sub_frame", "stylesheet", "script", "image",
+        "font", "object", "xmlhttprequest", "ping", "media", 
+        "websocket", "webtransport", "other"
+      ]
+    }
+  },
+  {
+    "id": 2,
+    "priority": 100,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "*://ulker.com.tr/*",
+      "resourceTypes": [
+        "main_frame", "sub_frame", "stylesheet", "script", "image",
+        "font", "object", "xmlhttprequest", "ping", "media", 
+        "websocket", "webtransport", "other"
+      ]
+    }
+  },
+  {
+    "id": 3,
+    "priority": 90,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "*://*.ulker.com.tr/*",
+      "resourceTypes": ["script", "image", "xmlhttprequest"],
+      "domainType": "thirdParty"
+    }
+  },
+  {
+    "id": 4,
+    "priority": 100,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "*://*.trt.net.tr/*",
+      "resourceTypes": [
+        "main_frame", "sub_frame", "stylesheet", "script", "image",
+        "font", "object", "xmlhttprequest", "ping", "media", 
+        "websocket", "webtransport", "other"
+      ]
+    }
+  },
+  {
+    "id": 5,
+    "priority": 100,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "*://trt.net.tr/*",
+      "resourceTypes": [
+        "main_frame", "sub_frame", "stylesheet", "script", "image",
+        "font", "object", "xmlhttprequest", "ping", "media", 
+        "websocket", "webtransport", "other"
+      ]
+    }
+  },
+  {
+    "id": 6,
+    "priority": 90,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "*://*.trt.net.tr/*",
+      "resourceTypes": ["script", "image", "xmlhttprequest"],
+      "domainType": "thirdParty"
+    }
+  },
+  {
+    "id": 7,
+    "priority": 100,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "*://*.cnnturk.com/*",
+      "resourceTypes": [
+        "main_frame", "sub_frame", "stylesheet", "script", "image",
+        "font", "object", "xmlhttprequest", "ping", "media", 
+        "websocket", "webtransport", "other"
+      ]
+    }
+  },
+  {
+    "id": 8,
+    "priority": 100,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "*://cnnturk.com/*",
+      "resourceTypes": [
+        "main_frame", "sub_frame", "stylesheet", "script", "image",
+        "font", "object", "xmlhttprequest", "ping", "media", 
+        "websocket", "webtransport", "other"
+      ]
+    }
+  },
+  {
+    "id": 9,
+    "priority": 90,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "*://*.cnnturk.com/*",
+      "resourceTypes": ["script", "image", "xmlhttprequest"],
+      "domainType": "thirdParty"
+    }
+  },
+  {
+    "id": 10,
+    "priority": 100,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "*://*.ahaber.com.tr/*",
+      "resourceTypes": [
+        "main_frame", "sub_frame", "stylesheet", "script", "image",
+        "font", "object", "xmlhttprequest", "ping", "media", 
+        "websocket", "webtransport", "other"
+      ]
+    }
+  },
+  {
+    "id": 11,
+    "priority": 100,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "*://ahaber.com.tr/*",
+      "resourceTypes": [
+        "main_frame", "sub_frame", "stylesheet", "script", "image",
+        "font", "object", "xmlhttprequest", "ping", "media", 
+        "websocket", "webtransport", "other"
+      ]
+    }
+  },
+  {
+    "id": 12,
+    "priority": 90,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "*://*.ahaber.com.tr/*",
+      "resourceTypes": ["script", "image", "xmlhttprequest"],
+      "domainType": "thirdParty"
+    }
+  },
+  {
+    "id": 13,
+    "priority": 100,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "*://*.trtworld.com/*",
+      "resourceTypes": [
+        "main_frame", "sub_frame", "stylesheet", "script", "image",
+        "font", "object", "xmlhttprequest", "ping", "media", 
+        "websocket", "webtransport", "other"
+      ]
+    }
+  },
+  {
+    "id": 14,
+    "priority": 100,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "*://trtworld.com/*",
+      "resourceTypes": [
+        "main_frame", "sub_frame", "stylesheet", "script", "image",
+        "font", "object", "xmlhttprequest", "ping", "media", 
+        "websocket", "webtransport", "other"
+      ]
+    }
+  },
+  {
+    "id": 15,
+    "priority": 90,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "*://*.trtworld.com/*",
+      "resourceTypes": ["script", "image", "xmlhttprequest"],
+      "domainType": "thirdParty"
+    }
+  },
+  {
+    "id": 16,
+    "priority": 100,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "*://*.trt.com.tr/*",
+      "resourceTypes": [
+        "main_frame", "sub_frame", "stylesheet", "script", "image",
+        "font", "object", "xmlhttprequest", "ping", "media", 
+        "websocket", "webtransport", "other"
+      ]
+    }
+  },
+  {
+    "id": 17,
+    "priority": 90,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "*://*.trt.com.tr/*",
+      "resourceTypes": ["script", "image", "xmlhttprequest"],
+      "domainType": "thirdParty"
+    }
+  }
+]
