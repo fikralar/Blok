@@ -1,4 +1,4 @@
-# Blok
+# Blok //
 Basit Kurulum Adımları
 Dosyaları bir klasöre çıkarın.
 Google Chrome tarayıcınızı açın.
